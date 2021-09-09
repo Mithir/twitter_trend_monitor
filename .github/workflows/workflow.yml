@@ -26,7 +26,7 @@ jobs:
           aws-region: ap-southeast-1
       # Step 5
       - name: Build Application and Run unit Test
-        run: python app.py & pytest
+        run: python __main__.py  #app.py & pytest
 
   continuous-deployment:
     runs-on: ubuntu-latest
