@@ -3,7 +3,7 @@ from settings import Settings
 
 if __name__ == '__main__':
     bucket_time = None
-    keywords = input('Which keywords should we monitor?')
+    keywords = 'love' #input('Which keywords should we monitor?')
 
     """
     while True:
