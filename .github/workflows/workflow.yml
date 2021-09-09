@@ -1,7 +1,7 @@
 name: CI/CD Pipeline
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   continuous-integration:
@@ -31,7 +31,7 @@ jobs:
   continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     steps:
      # Step 1
       - name: Configure AWS credentials
