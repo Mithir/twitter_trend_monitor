@@ -44,7 +44,7 @@ jobs:
       - name: Create CodeDeploy Deployment
         id: deploy
         run: |
-          aws deploy create-deployment \
+          aws deploy create-deployment  \
             --application-name amit-app \
             --deployment-group-name amit-dep-group \
             --deployment-config-name CodeDeployDefault.OneAtATime \
